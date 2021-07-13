@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+## Jumble Encryptor
 
-You can use the [editor on GitHub](https://github.com/HRUDAYTEJANDE/JUMBLENCRYPTOR/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This file can be used to encrypt files(not recommended). It can also be used to make a puzzle.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+If you want to make this file yourself, please refer to the repository link below
+https://github.com/HRUDAYTEJANDE/JUMBLENCRYPTOR
+##Code
+The libraries used for the project are
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+import time
+#used to delay code
+import winsound
+#used for sound effects
+import random
+#for jumbling
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For the code:
+Jumbler(random):
+#the jumbler helps to jumble the word that you will input
+```markdown
+def jumble(word):
+    # sample() method shuffling the characters of the word
+    random_word = random.sample(word, len(word))
+    jumbled = ''.join(random_word)
+    print(jumbled)
+    return jumbled
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HRUDAYTEJANDE/JUMBLENCRYPTOR/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+def choose():
+    # choice() method randomly choose
+    # any word from the list.
+    pick = random.choice(message)
 
-### Support or Contact
+    return pick
+```
+The code that is used to initialize this
+```markdown
+def jumble(word)
+```
+Word is the parameter for the text that you can jumble
+Examples:
+1
+Sound(winsound):
+#Used for sound effects.
+```markdown
+def sound():
+    frequency = 200  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+    frequency = 250  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+    frequency = 300  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+    time.sleep(1)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+def endsound():
+    frequency = 300  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+    frequency = 250  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+    frequency = 200  # Set Frequency To 2500 Hertz
+    duration = 50  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+```
+
